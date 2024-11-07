@@ -35,7 +35,7 @@ async function criaMulher(request, response) {
     })
 
     try {
-        const MulherCriada = await novaMulher.save()
+        const mulherCriada = await novaMulher.save()
         response.status(201).json(mulherCriada)
 
     } catch (erro) {
